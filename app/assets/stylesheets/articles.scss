@@ -1,0 +1,30 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+.article-page article {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  small {
+    font-size: 65%;
+  }
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+}

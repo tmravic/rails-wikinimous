@@ -1,0 +1,20 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #F8F8F8;
+  margin-bottom: 10px;
+  a {
+    color: #777;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}

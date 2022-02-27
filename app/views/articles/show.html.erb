@@ -1,0 +1,24 @@
+<p>You have read <%= session[:readings] %> articles so far.</p>
+<div class="article-page">
+  <article>
+    <h1>
+      <%= @article.title %>
+      <small>
+        <%= link_to edit_article_path(@article) do %>
+          <i class="fas fa-edit"></i>
+        <% end %>
+        <%= link_to article_path(@article), method: :delete, data: {confirm: "Really delete?"} do %>
+          <i class="fas fa-minus-circle"></i>
+        <% end %>
+      </small>
+    </h1>
+    <hr>
+    <p><%= @article.content %></p>
+  </article>
+  <%= 2.times do %>
+    <article>
+      <h2><%= Faker::Military.army_rank %></h2>
+      <p><%= Faker::Lorem.paragraphs(number: 7).join(" ") %></p>
+    </article>
+  <% end %>
+</div>

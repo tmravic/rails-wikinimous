@@ -1,0 +1,7 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "py-2" %>
+  <%= f.label :content %>
+  <%= f.text_field :content, size: 50, class: "py-2"  %>
+  <%= f.submit %>
+<% end %>

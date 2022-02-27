@@ -1,0 +1,7 @@
+<p>You have read <%= session[:readings] %> articles so far.</p>
+<% @articles.each do |article| %>
+  <article>
+    <h2><a href="articles/<%= article.id %>"><%= article.title %></a></h2>
+    <%= article.content %>
+  </article>
+<% end %>
